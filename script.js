@@ -16,6 +16,7 @@ function setup() {
 
   // Decide to draw either the day or the night
   // based on the isNight variable
+  // draw function is only needed if dynamic art is drawn
   if (isNight === true){
     // here the function is called
     drawNight();
