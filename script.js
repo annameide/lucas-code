@@ -1,46 +1,66 @@
-// Conditionals
-// Verwende Konditionen, um die Funktion `drawDay` oder `drawNight` die Variabel // `isNight` entsprenchend.
 
-// The line below adds autocompletion for p5.js which is very Helpful
-// <reference path="./p5.d.ts" />
+// let house is an object, which is defined here. it defines the shape and the position of the house rectangele. every property has a name which can be called later with the object-name.property-name
+let house = { // object name
+  width: 300, // property: value 
+  height: 500, // property name: value
+  xPosition: 50, // property name: value
+  yPosition: 100 // property name: value
+}
 
-// HELP: https://replit.com/@vogelino/P5js-Conditionals
-// Here are the docs for P5.js: https://p5js.org/reference/
+// each window is defined as an object
+let window0 = {
+  width: 30, // property name: value 
+  height: 50, // property name: value
+  xPosition: house.xPosition+50, // property name: value
+  yPosition: house.yPosition+100 // property name: value
+}
 
-// declaration and initialisation of the isNight variable. 
-// for this example the variable is changed manually between true and false
+let window1 = {
+  width: 30, // property name: value 
+  height: 50, // property name: value
+  xPosition: house.xPosition+150, // property name: value
+  yPosition: house.yPosition+100 // property name: value
+}
 
-let isNight = false;
+let window2 = {
+  width: 30, // property name: value 
+  height: 50, // property name: value
+  xPosition: house.xPosition+250, // property name: value
+  yPosition: house.yPosition+100 // property name: value
+}
+
+
+// the window objects are put inside an array, to shorten the code in the function drawWindow
+let windows = [
+// an array must be defined here
+window0,window1,window2
+];
 
 // The setup function is called once at the beginning
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(255);
+createCanvas(400, 600);
+background(240);
 
-  // Decide to draw either the day or the night
-  // based on the isNight variable
-  // draw function is only needed if dynamic art is drawn
-  if (isNight === true) {
-    // here the function is called
-    drawNight();
-  } else {
-    drawDay();
+drawHouse();
+drawWindow(windows[0])
+drawWindow(windows[1])
+drawWindow(windows[2]) 
+}
+
+function drawHouse() {
+
+fill(200);
+noStroke();
+// in order to draw the house rectangle the house object property values are called
+rect(house.xPosition, house.yPosition, house.width, house.height)
+fill(150, 100, 20);
+triangle(house.xPosition, house.yPosition, width / 2, 0, house.xPosition + house.width, house.yPosition);
+}
+
+// this step is WAY too abstract for me yet. why can I call the parameter / input whatever I want??? 
+function drawWindow(windowObject) {
+  fill(20);
+  stroke(0);
+  // in order to draw the window rectangle the window object property values are called 
+  rect(windowObject.xPosition, windowObject.yPosition, windowObject.width, windowObject.height)  
   }
-}
-
-// here the function drawDay is defined. it is called in the if else conditional // statement inside the setup function, which means a function can be called in 
-// another function. 
-
-function drawDay() {
-  background(0, 0, 150);
-  fill("#ffd966");
-  ellipse(windowWidth/2, 100, 100);
-  text('is day', windowWidth/2 - 30, 30);
-
-}
-
-function drawNight() {
-  fill(255);
-  ellipse(100, 100, 100);
-  text('is night', 30, 30);
-}
