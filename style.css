@@ -1,3 +1,6 @@
 h1 {
-    background-color: red;
+    color: pink;
+    display: inline-block;
+    
+    border: 2px solid red;
   }
