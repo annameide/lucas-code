@@ -1,3 +1,3 @@
-# Website mit p5.js Cursor
+# A mini website with CSS units explanations
 
 ...
