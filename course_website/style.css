@@ -15,10 +15,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-html, body, a, button {
-  cursor: none !important;
-}
-
 .text-link {
   font-weight: bold;
   text-decoration: underline;
@@ -178,16 +174,4 @@ strong {
   font-size: 12px;
   color: var(--text-color);
   opacity: 0.5;
-}
-
-#cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  background: white;
 }

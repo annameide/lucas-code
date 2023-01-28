@@ -1,3 +1,0 @@
-# Website mit p5.js Cursor
-
-...
