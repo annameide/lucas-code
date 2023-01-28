@@ -1,0 +1,57 @@
+body {
+
+    font-family: 'Martian Mono', serif;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.artist {
+width: 50%;
+}
+
+.name-logo {
+    background-color: blue; 
+    position: fixed; 
+    right: 0px; 
+    width: 25%
+}
+
+
+.biography {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+
+}
+
+.biography p {
+    border: 2px solid green;
+    width: 60%;
+    margin: 2% 0;
+
+}
+
+
+.exhibitonlist {
+    border: 2px solid red;
+}
+
+.map {
+    border: 2px solid green;
+}
+
+.container {
+    border: 8px solid black;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+}
+
+footer {
+    background-color: blue;
+    padding: 5%;
+    text-align: center;
+    color: #fff;
+}/* PLACE CSS HERE */
