@@ -1,3 +1,3 @@
-# lucas fhp class
+# crowd simulation
 
-Here are templates from Lucases FHP class. 
+how to run a preview of this site? 
