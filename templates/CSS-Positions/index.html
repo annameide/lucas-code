@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS Positions</title>
+  <style>
+    main {
+      color: white;
+      height: 200vh;
+      position: relative;
+      padding-top: 200px;
+    }
+
+    .square-static {
+      position: static;
+      width: 200px;
+      height: 200px;
+      background: red;
+    }
+
+    .square-relative {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: blue;
+    }
+
+    .square-absolute {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: green;
+      right: 0;
+      bottom: 0;
+    }
+
+    .square-fixed {
+      position: fixed;
+      width: 200px;
+      height: 100px;
+      background: cyan;
+      top: 300px;
+      left: 200px;
+    }
+
+    .image-slideshow {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      left: 0;
+      top: 0;
+    }
+
+    .image-container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .image-container img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      max-width: 100vw;
+      max-height: 100vh;
+      transform: translate(-50%, -50%);
+    }
+
+    .square-sticky {
+      position: sticky;
+      width: 150px;
+      height: 150px;
+      background: pink;
+      left: 400px;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Positions</h1>
+  <hr />
+  <main>
+    <div class="square-sticky">
+      <h2>Sticky Child</h2>
+    </div>
+    <div class="square-fixed">
+      <h2>Fixed Child</h2>
+    </div>
+    <!--     <div class="image-slideshow">
+      <div class="image-container">
+        <img src="https://fhp.incom.org/action/open-image/652256/big/652256.png" />
+      </div>
+    </div> -->
+    <div class="square-static">
+      <h2>Static Parent</h2>
+      <div class="square-absolute">
+        <h2>Absolute Child</h2>
+      </div>
+    </div>
+    <div class="square-relative">
+      <h2>Relative Parent</h2>
+      <div class="square-absolute">
+        <h2>Absolute Child</h2>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
