@@ -1,3 +1,3 @@
-# lucas fhp class
+# Multiple interconnected p5js canvasses
 
-Here are templates from Lucases FHP class. 
+... 
