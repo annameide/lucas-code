@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS rem Unit</title>
+  <link rel="stylesheet" href="./common.css">
+  <style>
+    html {
+      font-size: 24px;
+      color: white;
+    }
+
+    .square-rem-1 {
+      width: 10rem;
+      height: 100px;
+      background: blue;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+
+    .square-rem-2 {
+      width: 20rem;
+      height: 100px;
+      background: green;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+
+    .square-rem-3 {
+      width: 30rem;
+      height: 100px;
+      background: red;
+      margin-bottom: 20px;
+      font-size: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CSS rem Unit</h1>
+    <nav>
+      <a href="./">
+        <code>px</code>
+      </a>
+      <a href="./percent.html">
+        <code>%</code>
+      </a>
+      <a href="./vwvh.html">
+        <code>vw/vh</code>
+      </a>
+      <a href="./vminvmax.html">
+        <code>vmin/vmax</code>
+      </a>
+      <a href="./em.html">
+        <code>em</code>
+      </a>
+      <a href="./rem.html">
+        <code>rem</code>
+      </a>
+    </nav>
+  </header>
+  <p>These squares and their font-size are sized using the <code>rem</code> (not an acronym) unit:
+  </p>
+  <p>Change the font-size of the parent div to see the difference</p>
+  <div class="squares">
+    <div class="square-rem-1">Hello</div>
+    <div class="square-rem-2">Hello</div>
+    <div class="square-rem-3">Hello</div>
+    <div class="square-rem-3">
+      Hello
+      <div class="square-rem-2">
+        Hello
+        <div class="square-rem-1">
+          Hello
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

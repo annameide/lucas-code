@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS % Unit</title>
+  <link rel="stylesheet" href="./common.css">
+  <style>
+    .square-percent-1 {
+      width: 25%;
+      height: 100px;
+      background: blue;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .square-percent-2 {
+      width: 50%;
+      height: 100px;
+      background: green;
+      margin-bottom: 20px;
+    }
+
+    .square-percent-3 {
+      width: 75%;
+      height: 100px;
+      background: red;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CSS % Unit</h1>
+    <nav>
+      <a href="./">
+        <code>px</code>
+      </a>
+      <a href="./percent.html">
+        <code>%</code>
+      </a>
+      <a href="./vwvh.html">
+        <code>vw/vh</code>
+      </a>
+      <a href="./vminvmax.html">
+        <code>vmin/vmax</code>
+      </a>
+      <a href="./em.html">
+        <code>em</code>
+      </a>
+      <a href="./rem.html">
+        <code>rem</code>
+      </a>
+    </nav>
+  </header>
+  <p>These squares are sized using the <code>%</code> (percentage) unit:</p>
+  <p>Resize your browser window to notice the difference</p>
+  <div class="square-percent-1"></div>
+  <div class="square-percent-2"></div>
+  <div class="square-percent-3"></div>
+  <div class="square-percent-3">
+    <div class="square-percent-2">
+      <div class="square-percent-1"></div>
+    </div>
+  </div>
+</body>
+
+</html>
