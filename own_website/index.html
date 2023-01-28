@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--this is the standard way of adding a p5js sketch to an html file-->
+
+    <!--adding p5js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <!--adding the p5js sketch-->
+    <script src="script.js"></script>
+
+    <!--addition of css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <p>das ist mein canvas mit meinem p5js algorithmus drin</p>
+        <!--a div is needed where the sketch/canvas can be displayed in. 
+        It needs an unique id, so that it can be fetched by the javascript. 
+        It is the link between HTML file and the javascript file-->
+        <div id="canvas-container">
+          <canvas> </canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
