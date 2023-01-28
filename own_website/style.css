@@ -5,9 +5,16 @@ p{
 
 #canvas-container {
     border: 2px solid red;
-    width: 60%;
-    height: 60%;
+    top: 0;
+    left: 0;
 }
+
+#canvas-container canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .main {
 border: 4px solid green;

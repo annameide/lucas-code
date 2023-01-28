@@ -3,11 +3,14 @@
 
 // Here are the docs for P5.js: https://p5js.org/reference/
 
+let canvas;
+var widthCanvas=600;
+var heigthCanvas=600;
+
 // The setup function is called once at the beginning
 function setup() {
   // this is the link from the java script file back to the html file
-  var canvas = createCanvas(600, 600);
-  
+  canvas = createCanvas(widthCanvas, heigthCanvas);
   canvas.parent("canvas-container");
   
   background(255);
@@ -15,7 +18,7 @@ function setup() {
   stroke(0, 0, 255);
   textSize(32);
   noFill();
-  text('my first generative art peace', 30, 30);
+  text('my first generative art piece', 30, 30);
   text('is expensive', 50, 50);
 }
 
@@ -23,7 +26,7 @@ function setup() {
 function draw() {
 
   // the line starts drawing with a blue stroke color from the setup.
-  line(mouseX, mouseY, windowWidth / 2, 780);
+  line(mouseX, mouseY, widthCanvas / 2, 780);
   // the triangle starts drawing 
   fill(255, 255, 255);
   triangle(30, 75, mouseX, mouseY, 86, 75);
@@ -32,7 +35,7 @@ function draw() {
 // as soon as the mouse is pressed the stroke color changes to green
 function mousePressed() {
   stroke(0, 255, 0, mouseY);
-  line(mouseX, mouseY, windowWidth / 2, 600);
+  line(mouseX, mouseY, widthCanvas / 2, 600);
 }
 
 function keyTyped() {
