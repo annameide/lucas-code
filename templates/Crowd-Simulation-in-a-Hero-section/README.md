@@ -1,3 +1,3 @@
 # crowd simulation
 
-how to run a preview of this site? 
+To preview the site, open the index.html with a browser.
