@@ -7,15 +7,45 @@ p{
     border: 2px solid red;
     top: 0;
     left: 0;
+    width: 30% !important;
+    /*height: 50% !important;*/
+}
+/*
+#defaultCanvas0 {
+  width: 50% !important;
+}
+*/
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
 
+
+/*
+.p5Canvas {
+  width: 100% !important;
+}
+*/
+/*
 #canvas-container canvas {
     width: 100%;
     height: 100%;
 }
 
 
+#canvas-con {
+    width: 100%;
+    height: 100%;
+    border: 5px solid blue;
+}
 
+
+.p5Canvas {
+    width: 300;
+    height: 300;
+}
+*/
 .main {
 border: 4px solid green;
 display: flex;
