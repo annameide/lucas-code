@@ -1,0 +1,20 @@
+#algorithm1 {
+  width: 80%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+#algorithm2 {
+  width: 40%;
+  aspect-ratio: 1/1;
+  margin-left: 50px;
+  position: relative;
+}
+
+#algorithm1 canvas,
+#algorithm2 canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
