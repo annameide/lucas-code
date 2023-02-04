@@ -1,14 +1,13 @@
 #containerforalgo1 {
-  width: 50%;
+  width: 100%;
   aspect-ratio: 16/9;
   position: relative;
   border: 2px solid black;
 }
 
 #containerforalgo2 {
-  width: 40%;
+  width: 80%;
   aspect-ratio: 1/1;
-  margin-left: 50px;
   position: relative;
   border: 2px solid green;
 }
@@ -26,3 +25,14 @@ footer {
   padding: 2%;
 }
 
+.wrapper {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
