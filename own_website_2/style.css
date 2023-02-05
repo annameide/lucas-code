@@ -1,0 +1,21 @@
+footer {
+    background-color: blue;
+    padding: 2%;
+  }
+
+.logoandnavi {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+  border: 2px solid black;
+}
+
+ul {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid hotpink;
+}
