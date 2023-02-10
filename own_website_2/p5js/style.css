@@ -6,7 +6,7 @@
 }
 
 #containerforalgo2 {
-  width: 80%;
+ 
   aspect-ratio: 1/1;
   position: relative;
   border: 2px solid green;
@@ -46,6 +46,6 @@
   outline: 2px solid black;
   /*je höher die zahl, um so früher der umbruch (wrap)*/
   flex-basis: 700px;
-  flex-grow: 1;
+  flex-grow: 0;
   flex-shrink: 1;
 }
