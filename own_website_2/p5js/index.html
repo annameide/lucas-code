@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--link to css style sheets-->
-    <!--local style sheet-->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--link to reset css UND ZWAR eine hierrachie stufe höher ../-->
+    <link href="../reset.css" rel="stylesheet" type="text/css" />
     <!--global style sheet-->
     <link href="../style.css" rel="stylesheet" type="text/css" />
+    <!--local style sheet-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
     <!--link to p5.js library-->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
@@ -37,7 +39,7 @@
     <div class="main" style="border: 2px solid green">
       <h1>p5js gallery</h1>
       <div class="wrapper">
-        <div style="border: 2px solid black; width: 30%">
+        <div class="algocard">
           <!--in the html file we can only see the div element. 
       the canvas element is being dynamicaly created inside the div element 
       by the .js file ()e.g. algorithm1.js-->
@@ -52,7 +54,7 @@
           </div>
         </div>
 
-        <div style="border: 2px solid black; width: 30%">
+        <div class="algocard">
           <div id="containerforalgo2"></div>
           <div style="border: 2px solid red; width: 80%">
             <p>titel der arbeit 2</p>
@@ -65,7 +67,7 @@
         </div>
       </div>
       <div class="wrapper">
-        <div style="border: 2px solid black; width: 30%">
+        <div class="algocard">
           <!--in the html file we can only see the div element. 
         the canvas element is being dynamicaly created inside the div element 
         by the .js file ()e.g. algorithm1.js-->
@@ -80,7 +82,7 @@
           </div>
         </div>
 
-        <div style="border: 2px solid black; width: 30%">
+        <div class="algocard">
           <div id="containerforalgo2"></div>
           <div>
             <p>titel der arbeit 4</p>

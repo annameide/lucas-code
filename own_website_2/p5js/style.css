@@ -20,14 +20,32 @@
   border: 4px solid hotpink;
 }
 
+.main {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
+   /*der wert der variable wird hier "näher" überschrieben*/
+  /* var for color is being replaced by blue (instead of hotpink) AND affects the whole subtree*/
+
+  --text-color:blue;
   border: 2px solid red;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 2%;
+  flex-wrap: wrap;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
+/*children nach den parents aufschreiben*/
+
+.algocard {
+  /* this is why the text color here is being blue*/
+  color: var(--text-color);
+  outline: 2px solid black;
+  /*je höher die zahl, um so früher der umbruch (wrap)*/
+  flex-basis: 700px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }

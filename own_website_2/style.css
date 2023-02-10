@@ -1,9 +1,22 @@
+/*hier werden die css variablen angelegt,  initiiert*/
+:root {
+  --text-color:hotpink;
+}
+
+/* look here for examples: https://replit.com/@Viscoders2223/Erste-Webseite-annameide#style.css*/
+
+body {
+  /*hier werden die css variablen gecalled / verwendet*/
+  color: var(--text-color);
+}
+
 footer {
     background-color: blue;
     padding: 2%;
   }
 
 .logoandnavi {
+  padding: 8px;
   display: flex;
   justify-content: space-between;
 }
@@ -14,8 +27,10 @@ li {
 }
 
 ul {
-  width: 10%;
+  align-items: center;
+  gap: 24px; /*8er grid is cool*/
   display: flex;
-  justify-content: space-between;
   border: 2px solid hotpink;
+  margin: 0;
+  padding: 0;
 }
