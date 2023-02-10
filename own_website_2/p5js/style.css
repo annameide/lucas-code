@@ -49,3 +49,12 @@
   flex-grow: 0;
   flex-shrink: 1;
 }
+
+a:hover {
+  color: red;
+  font-size: 2rem;
+}
+
+.gallerytext {
+  padding-top: 24px;
+}
