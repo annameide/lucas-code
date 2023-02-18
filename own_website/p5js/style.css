@@ -19,10 +19,18 @@
   border: 2px solid green;
 }
 
+#containerforalgo4 {
+  width: 100%;
+  aspect-ratio: 4/3;
+  position: relative;
+  border: 2px solid green;
+}
+
 
 #containerforalgo1 canvas,
 #containerforalgo2 canvas,
-#containerforalgo3 canvas {
+#containerforalgo3 canvas,
+#containerforalgo4 canvas {
   position: absolute;
   top: 0;
   left: 0;
