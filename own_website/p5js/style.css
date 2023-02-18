@@ -6,7 +6,7 @@
 }
 
 #containerforalgo2 {
- 
+  width: 100%;
   aspect-ratio: 1/1;
   position: relative;
   border: 2px solid green;

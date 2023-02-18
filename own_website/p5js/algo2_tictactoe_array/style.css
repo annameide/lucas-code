@@ -1,11 +1,11 @@
-#containerforalgo1 {
+#containerforalgo2 {
     width: 50%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
     position: relative;
     border: 2px solid black;
   }
   
-  #containerforalgo1 canvas {
+  #containerforalgo2 canvas {
     position: absolute;
     top: 0;
     left: 0;
