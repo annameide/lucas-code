@@ -1,0 +1,11 @@
+.main {
+  padding: 8px;
+  display: flex;
+  flex-direction: column; 
+}
+
+a:hover {
+  color: red;
+  font-size: 2rem;
+}
+

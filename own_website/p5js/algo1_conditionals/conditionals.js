@@ -29,10 +29,32 @@ function algorithm1(sketch) {
     } else {
       sketch.drawDay();
     }
+    button = sketch.createButton('alter time');
+    button.position(sketch.width/2-75, sketch.height /2+20);
+    button.mousePressed(sketch.showOtherTime);
+    button.mouseOver(() => sketch.loop())
   }
     // here the function drawDay is defined. it is called in the if else conditional 
     // statement inside the setup function, which means a function can be called in 
     // another function. 
+    
+    sketch.draw = function() {
+
+      if (isNight === true) {
+        // here the function drawNight is called / executed
+        sketch.drawNight();
+      } else {
+        sketch.drawDay();
+      }
+  
+    }
+
+    sketch.showOtherTime = function() {
+
+      isNight = !isNight;
+  
+    }
+
 
   sketch.drawDay = function() {
     sketch.background(0, 0, 150);
