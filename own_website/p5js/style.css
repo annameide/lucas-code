@@ -12,8 +12,17 @@
   border: 2px solid green;
 }
 
+#containerforalgo3 {
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  border: 2px solid green;
+}
+
+
 #containerforalgo1 canvas,
-#containerforalgo2 canvas {
+#containerforalgo2 canvas,
+#containerforalgo3 canvas {
   position: absolute;
   top: 0;
   left: 0;
@@ -57,4 +66,16 @@ a:hover {
 
 .gallerytext {
   padding-top: 24px;
+}
+
+button {
+  background-color: hotpink;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }

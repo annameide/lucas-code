@@ -1,11 +1,11 @@
-#containerforalgo1 {
+#containerforalgo3 {
     width: 50%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
     position: relative;
     border: 2px solid black;
   }
   
-  #containerforalgo1 canvas {
+  #containerforalgo3 canvas {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,4 +20,8 @@
 
   p {
     width: 50%;
+  }
+
+  button {
+    background-color: blueviolet;
   }
