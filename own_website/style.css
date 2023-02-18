@@ -1,32 +1,36 @@
-p{
-    border: 2px solid red;
-    display: inline-block;
+/*hier werden die css variablen angelegt,  initiiert*/
+:root {
+  --text-color:hotpink;
 }
 
-#canvas-container {
-    border: 2px solid red;
-    top: 0;
-    left: 0;
+/* look here for examples: https://replit.com/@Viscoders2223/Erste-Webseite-annameide#style.css*/
+
+body {
+  /*hier werden die css variablen gecalled / verwendet*/
+  color: var(--text-color);
 }
 
-#canvas-container canvas {
-    width: 100%;
-    height: 100%;
+footer {
+    background-color: blue;
+    padding: 2%;
+  }
+
+.logoandnavi {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
+li {
+  list-style-type: none;
+  border: 2px solid black;
+}
 
-
-.main {
-border: 4px solid green;
-display: flex;
-justify-content: center;
+ul {
   align-items: center;
-}
-
-
-.container {
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 24px; /*8er grid is cool*/
+  display: flex;
+  border: 2px solid hotpink;
+  margin: 0;
+  padding: 0;
 }
