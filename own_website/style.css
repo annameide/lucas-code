@@ -49,6 +49,30 @@ a {
   color: blue;
 }
 
+button {
+  background-color: hotpink;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.introtextwrapper{
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.introtext {
+  width: 70vw;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -60,7 +84,6 @@ footer {
 footer p {
   max-width: 40%;
   font-size: 8pt;
-  line-height: 1.4;
   text-align: center;
   padding: 4px 0;
   color: #222;
