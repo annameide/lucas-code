@@ -1,6 +1,6 @@
 /*hier werden die css variablen angelegt,  initiiert*/
 :root {
-  --text-color:hotpink;
+  --text-color:#222;
   --font-family: 'Martian Mono', monospace;
 }
 
@@ -22,14 +22,12 @@ body {
 
 li {
   list-style-type: none;
-  border: 2px solid black;
 }
 
 ul {
   align-items: center;
   gap: 24px; /*8er grid is cool*/
   display: flex;
-  border: 2px solid hotpink;
   margin: 0;
   padding: 0;
 }
@@ -39,18 +37,7 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   min-height: 86vh;
-  background-color: aqua;
   padding: 8px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: blue;
-  padding: 2%;
-  
-  width: 100%;
 }
 
 a:hover {
@@ -58,3 +45,23 @@ a:hover {
   font-size: 2rem;
 }
 
+a {
+  color: blue;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  width: 100%;
+}
+
+footer p {
+  max-width: 40%;
+  font-size: 8pt;
+  line-height: 1.4;
+  text-align: center;
+  padding: 4px 0;
+  color: #222;
+}
