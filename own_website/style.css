@@ -12,7 +12,6 @@ body {
   font-family: var(--font-family);
 }
 
-
 .logoandnavi {
   padding: 8px;
   display: flex;
@@ -20,9 +19,16 @@ body {
   min-height: 14vh;
 }
 
-li {
-  list-style-type: none;
+h1 {
+  font-size: 2rem;
+  padding-bottom: 16px;
 }
+
+span {
+  font-weight: 800;
+  color: cornflowerblue;
+}
+
 
 ul {
   align-items: center;
@@ -30,6 +36,10 @@ ul {
   display: flex;
   margin: 0;
   padding: 0 40px;
+}
+
+li {
+  list-style-type: none;
 }
 
 .main {
@@ -40,12 +50,13 @@ ul {
   padding: 8px;
 }
 
-a:hover {
-  color: red;
+a {
+  color: #7DA4FF;
 }
 
-a {
-  color: blue;
+a:hover {
+  /*  color: #FFA996;*/
+    color: #B38D34;
 }
 
 button {
@@ -72,6 +83,25 @@ button {
   line-height: 1.6;
 }
 
+.subsitelayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subsitetext {
+  width: 50%;
+}
+
+.subsitetext p {
+  padding-top: 32px;
+  line-height: 1.6;
+}
+
+.subsitetext img {
+  padding-top: 40px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -86,24 +116,4 @@ footer p {
   text-align: center;
   padding: 4px 0;
   color: #222;
-}
-
-h1 {
-  font-size: 2rem;
-  padding-bottom: 16px;
-}
-
-span {
-  font-weight: 800;
-  color: cornflowerblue;
-}
-
-
-.subsitetext p {
-  padding-top: 32px;
-  line-height: 1.6;
-}
-
-.subsitetext img {
-  padding-top: 40px;
 }
