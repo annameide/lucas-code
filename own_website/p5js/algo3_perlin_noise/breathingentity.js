@@ -40,8 +40,6 @@ function algorithm3(sketch){
     } else {
       sketch.breathe2();
     }
-
-
   }
 
   // the pillow shall be visually represented here through a cicrle(x,y,d)
