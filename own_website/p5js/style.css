@@ -22,7 +22,6 @@
   position: relative;
 }
 
-
 #containerforalgo1 canvas,
 #containerforalgo2 canvas,
 #containerforalgo3 canvas,
@@ -30,12 +29,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.main {
-  padding: 8px;
-  display: flex;
-  flex-direction: column; 
 }
 
 .wrapper {
@@ -68,4 +61,3 @@
   padding-bottom: 24px;
   line-height: 1.6;
 }
-

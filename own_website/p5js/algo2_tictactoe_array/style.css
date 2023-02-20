@@ -9,13 +9,3 @@
     top: 0;
     left: 0;
   }
-
-  .subsitelayout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .subsitetext {
-    width: 50%;
-  }
