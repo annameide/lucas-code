@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--link to css style sheets-->
+    <!--link to reset css UND ZWAR eine hierrachie stufe höher ../-->
+    <link href="../reset.css" rel="stylesheet" type="text/css" />
+    <!--global style sheet-->
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <!--local style sheet-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!--link to p5.js library-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+
+    <!--link to lokal .js files (which contain the generative art algorithms)-->
+    <script defer src="algo1_conditionals/conditionals.js"></script>
+    <script defer src="algo2_tictactoe_array/tictactoe_arrays.js"></script>
+    <script defer src="algo3_perlin_noise/breathingentity.js"></script>
+    <script defer src="algo4_datavis_cities/cities.js"></script>
+
+    <!-- typo import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>p5js</title>
+  </head>
+
+  <body>
+    <div class="logoandnavi">
+      <a href="../index.html">
+        <img src="../assets/home_logo.svg" alt="home logo"
+      /></a>
+      <ul>
+        <li><a href="../about/index.html">about me</a></li>
+        <!--<li><a href="projects/index.html">projects</a></li>-->
+        <li><a href="../p5js/index.html">p5js</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="wrapper">
+        <div class="algocard">
+          <!--in the html file we can only see the div element. 
+          the canvas element is being dynamicaly created inside the div element 
+          by the .js file ()e.g. algorithm1.js-->
+
+          <div id="containerforalgo1"></div>
+          <a href="algo1_conditionals/index.html">
+            <div class="gallerytext">
+              <h1>It is day – under one condition</h1>
+              <p>
+                An algorithm using conditional statements like if/else to
+                display a daytime sketch or a nighttime sketch.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="algocard">
+          <div id="containerforalgo2"></div>
+          <a href="algo2_tictactoe_array/index.html">
+            <div class="gallerytext">
+              <h1>Fairytale Arrays</h1>
+              <p>
+                Arrays containing arrays, containing arrays. A fun little
+                algorithm displaying nine words that describe a well-known
+                fairytale. Can you guess them all?
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="algocard">
+          <!--in the html file we can only see the div element. 
+        the canvas element is being dynamicaly created inside the div element 
+        by the .js file ()e.g. algorithm1.js-->
+          <div id="containerforalgo3"></div>
+          <a href="algo3_perlin_noise/index.html">
+            <div class="gallerytext">
+              <h1>A breating Perlin Noise</h1>
+              <p>
+                Perlin Noise is a noise function based on pseudorandom gradient
+                values at grid points. The distribution of the variations makes
+                the visual output appear "more organic", as the transitions are
+                smooth.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="algocard">
+          <div id="containerforalgo4"></div>
+          <a href="algo4_datavis_cities/index.html">
+            <div class="gallerytext">
+              <h1>DataVis Cities</h1>
+              <p>
+                The very first baby steps in data visualization with code. A
+                .json file is mapped visually to circle and text outputs
+                depicting the largest cities in the world.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <footer>
+        <p>
+          You can find the algorithms and website code on my
+          <a href="https://github.com/annameide/lucas-code">GitHub</a> site.
+        </p>
+        <p>© Anna Meide 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>

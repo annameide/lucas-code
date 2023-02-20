@@ -1,0 +1,75 @@
+#containerforalgo1 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+#containerforalgo2 {
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative; 
+}
+
+#containerforalgo3 {
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+#containerforalgo4 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+
+#containerforalgo1 canvas,
+#containerforalgo2 canvas,
+#containerforalgo3 canvas,
+#containerforalgo4 canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  padding: 8px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.wrapper {
+  /*der wert der variable wird hier "näher" überschrieben*/
+  /* var for color is being replaced by blue (instead of hotpink) AND affects the whole subtree*/
+  /*--text-color:blue;*/
+  
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+  flex-wrap: wrap;
+}
+
+/*children nach den parents aufschreiben*/
+
+.algocard {
+  /* this is why the text color here is being blue*/
+  color: var(--text-color);
+  /*je höher die zahl, um so früher der umbruch (wrap)*/
+  flex-basis: 700px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.gallerytext {
+  padding-top: 24px;
+}
+
+.gallerytext p {
+  padding-bottom: 24px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2rem;
+  padding-bottom: 16px;
+}

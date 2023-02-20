@@ -1,32 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
-    <!--this is the standard way of adding a p5js sketch to an html file-->
+    <!--link to reset css-->
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <!--link to css style sheet-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <!--adding p5js library-->
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
-    <!--adding the p5js sketch-->
-    <script src="script.js"></script>
+    <!-- typo import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <!--addition of css-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <title>Document</title>
+    <title>own website 2</title>
   </head>
+
   <body>
+    <div class="logoandnavi">
+      <a href="index.html">
+        <img src="assets/home_logo.svg" alt="home logo"
+      /></a>
+      <!--navigation change to nav tag?-->
+      <ul>
+        <li><a href="about/index.html">about me</a></li>
+        <!--<li><a href="projects/index.html">projects</a></li>-->
+        <li><a href="p5js/index.html">p5js</a></li>
+      </ul>
+    </div>
+
     <div class="main">
-      <div class="container">
-        <p>das ist mein canvas mit meinem p5js algorithmus drin</p>
-        <!--a div is needed where the sketch/canvas can be displayed in. 
-        It needs an unique id, so that it can be fetched by the javascript. 
-        It is the link between HTML file and the javascript file-->
-        <div id="canvas-container">
-        </div>
+      <div class="introtextwrapper">
+        <p class="introtext">
+          Hey, great to see you here. I am <a href="about/index.html"> Anna</a>,
+          an interface design student on my way to the wonderful realm of
+          creative coding. During the winter term 22|23 I took the “Visuelle
+          Geschichten mit Code & Daten” course by
+          <a href="https://github.com/vogelino">Lucas Vogel</a> at the
+          <a href="https://design.fh-potsdam.de/">FHP</a>. This is my course
+          mini website showing some of the
+          <a href="p5js/index.html">beautiful algorithms</a> we created.
+        </p>
       </div>
+
+      <footer>
+        <p>
+          You can find the algorithms and website code on my
+          <a href="https://github.com/annameide/lucas-code">GitHub</a> site.
+        </p>
+        <p>© Anna Meide 2023</p>
+      </footer>
     </div>
   </body>
 </html>

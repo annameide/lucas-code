@@ -1,0 +1,35 @@
+#containerforalgo3 {
+    width: 40%;
+    aspect-ratio: 1/1;
+    position: relative;
+    border: 2px solid black;
+  }
+  
+  #containerforalgo3 canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 4px solid hotpink;
+  }
+
+  .subsitelayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    background-color: hotpink;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .subsitetext {
+    width: 50%;
+  }

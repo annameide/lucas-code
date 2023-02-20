@@ -1,62 +1,89 @@
-p{
-    border: 2px solid red;
-    display: inline-block;
+/*hier werden die css variablen angelegt,  initiiert*/
+:root {
+  --text-color:#222;
+  --font-family: 'Martian Mono', monospace;
 }
 
-#canvas-container {
-    border: 2px solid red;
-    top: 0;
-    left: 0;
-    width: 30% !important;
-    /*height: 50% !important;*/
-}
-/*
-#defaultCanvas0 {
-  width: 50% !important;
-}
-*/
+/* look here for examples: https://replit.com/@Viscoders2223/Erste-Webseite-annameide#style.css*/
 
-canvas {
-  width: 100% !important;
-  height: 100% !important;
+body {
+  /*hier werden die css variablen gecalled / verwendet*/
+  color: var(--text-color);
+  font-family: var(--font-family);
 }
 
 
-/*
-.p5Canvas {
-  width: 100% !important;
-}
-*/
-/*
-#canvas-container canvas {
-    width: 100%;
-    height: 100%;
+.logoandnavi {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 14vh;
 }
 
-
-#canvas-con {
-    width: 100%;
-    height: 100%;
-    border: 5px solid blue;
+li {
+  list-style-type: none;
 }
 
-
-.p5Canvas {
-    width: 300;
-    height: 300;
-}
-*/
-.main {
-border: 4px solid green;
-display: flex;
-justify-content: center;
+ul {
   align-items: center;
+  gap: 24px; /*8er grid is cool*/
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 86vh;
+  padding: 8px;
+}
 
-.container {
-    display: flex;
+a:hover {
+  color: red;
+}
+
+a {
+  color: blue;
+}
+
+button {
+  background-color: hotpink;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.introtextwrapper{
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.introtext {
+  width: 70vw;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+footer {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 2%;
+  width: 100%;
+}
+
+footer p {
+  max-width: 40%;
+  font-size: 8pt;
+  text-align: center;
+  padding: 4px 0;
+  color: #222;
 }
