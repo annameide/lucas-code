@@ -29,7 +29,7 @@ ul {
   gap: 24px; /*8er grid is cool*/
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
 }
 
 .main {
@@ -104,6 +104,6 @@ span {
   line-height: 1.6;
 }
 
-img {
+.subsitetext img {
   padding-top: 40px;
 }

@@ -47,14 +47,45 @@
 
         <div class="subsitetext">
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-            soluta, suscipit sint pariatur, eum ipsa sapiente nesciunt repellat
-            blanditiis ipsam modi quae aperiam quibusdam nisi asperiores alias
-            similique ab libero quod quas. Rem corrupti qui suscipit illo soluta
-            rerum aliquid veniam saepe voluptatum vel, in dolor voluptas hic,
-            maiores odio blanditiis fuga assumenda vitae sapiente ut cum
-            recusandae a laborum omnis? Id eum odio repudiandae iure eaque, quam
-            est iusto!
+            This sketch is a very first baby step in the vast and complex realm
+            of data visualization with code.
+
+            <br />
+            <br />
+            In order to map the data it had to be imported into the JavaScript
+            file first. I decided to map the "World's largest Cities" and
+            imported the data in a JSON format. The data contained the name of
+            the city as well as it's population size.
+
+            <br />
+            <br />
+            I decided on the most classical type of data visualization and
+            mapped the population of a city to the diameter of a circle. The
+            larger a population – the larger the circle diameter.
+          </p>
+
+          <p>
+            With the maximum population size of roughly 36 million in the
+            Tokyo-Yokohama bay area the numbers had to be adjusted with the
+            "map" method, which re-maps a number from one range to another.
+            <span
+              >let diameter = sketch.map(jsonContents[i].population, 0,
+              maxPopulation, 10, 200)</span
+            >
+            Given the map syntax:
+            <span
+              >map(value, start1, stop1, start2, stop2, [withinBounds])</span
+            >
+            I mapped the max. population size of 36 million to a max. diameter
+            length of 200px.
+          </p>
+          <p>
+            You are welcome to look at the code in detail on my
+            <a
+              href="https://github.com/annameide/lucas-code/tree/main/own_website/p5js/algo4_datavis_cities"
+              >GitHub</a
+            >
+            repository.
           </p>
         </div>
       </div>
