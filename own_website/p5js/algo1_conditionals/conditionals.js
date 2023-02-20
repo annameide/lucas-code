@@ -11,7 +11,7 @@ function algorithm1(sketch) {
     let isNight = true;
 
     //The setup function is called once at the beginning
-  sketch.setup = function() {
+    sketch.setup = function() {
 
     const containerSize = container1.getBoundingClientRect();
     const canvs = sketch.createCanvas(containerSize.width, containerSize.height);

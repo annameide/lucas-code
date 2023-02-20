@@ -32,7 +32,7 @@ function algorithm4(sketch) {
     // If our json file hasn't been loaded yet, we skip the function by returning nothing
     if (jsonContents.length === 0) {
       sketch.textSize(32);
-      sketch.text("Loading...", 40, 40)
+      sketch.text("Loading... Stay tuned ;)", 40, 80)
       return
     }
     // The return statement ends function execution and specifies a value to be returned to the function caller. 
@@ -44,16 +44,16 @@ function algorithm4(sketch) {
     sketch.background("#F4F4F4")
     sketch.textSize(18);
     let jsonLength = jsonContents.length;
-    let spaceBetweenEllipses = 200;
+    let spaceBetweenEllipses = 240;
 
     for (let i = 0; i < jsonLength; i++) {
       sketch.fill("#3B393E")
-      sketch.text(jsonContents[i].city, 280, 110 + i * spaceBetweenEllipses)
-      sketch.text(jsonContents[i].population, 380, 110 + i * spaceBetweenEllipses)
+      sketch.text(jsonContents[i].city, 380, 140 + i * spaceBetweenEllipses)
+      sketch.text(jsonContents[i].population, 480, 140 + i * spaceBetweenEllipses)
       let blue = sketch.map(jsonContents[i].population, 0, maxPopulation, 255, 0)
       let diameter = sketch.map(jsonContents[i].population, 0, maxPopulation, 10, 200)
       sketch.fill(200, 0, 50); // += je mehr, um so dunkler. 0 = schwarz, 255 = weiss 
-      sketch.ellipse(140, 110 + i * spaceBetweenEllipses, diameter)
+      sketch.ellipse(200, 140 + i * spaceBetweenEllipses, diameter)
     }
 
     sketch.noLoop()

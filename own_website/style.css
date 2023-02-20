@@ -29,7 +29,7 @@ ul {
   gap: 24px; /*8er grid is cool*/
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
 }
 
 .main {
@@ -76,7 +76,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2%;
+  padding: 80px 0 16px 0;
   width: 100%;
 }
 
@@ -91,4 +91,19 @@ footer p {
 h1 {
   font-size: 2rem;
   padding-bottom: 16px;
+}
+
+span {
+  font-weight: 800;
+  color: cornflowerblue;
+}
+
+
+.subsitetext p {
+  padding-top: 32px;
+  line-height: 1.6;
+}
+
+.subsitetext img {
+  padding-top: 40px;
 }
