@@ -41,18 +41,18 @@ function algorithm4(sketch) {
     // OPEN YOU CONSOLE TO SEE THE DATA
     // go in json file / go into array / go into first array object, go to population property, take population value, map value to a drawable range, use this value as d in circle
 
-    sketch.background("green")
-    sketch.textSize(16);
+    sketch.background("#F4F4F4")
+    sketch.textSize(18);
     let jsonLength = jsonContents.length;
     let spaceBetweenEllipses = 200;
 
     for (let i = 0; i < jsonLength; i++) {
-      sketch.fill("white")
+      sketch.fill("#3B393E")
       sketch.text(jsonContents[i].city, 280, 110 + i * spaceBetweenEllipses)
       sketch.text(jsonContents[i].population, 380, 110 + i * spaceBetweenEllipses)
       let blue = sketch.map(jsonContents[i].population, 0, maxPopulation, 255, 0)
       let diameter = sketch.map(jsonContents[i].population, 0, maxPopulation, 10, 200)
-      sketch.fill(50, 50, blue); // += je mehr, um so dunkler. 0 = schwarz, 255 = weiss 
+      sketch.fill(200, 0, 50); // += je mehr, um so dunkler. 0 = schwarz, 255 = weiss 
       sketch.ellipse(140, 110 + i * spaceBetweenEllipses, diameter)
     }
 
