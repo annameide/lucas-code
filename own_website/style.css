@@ -87,3 +87,8 @@ footer p {
   padding: 4px 0;
   color: #222;
 }
+
+h1 {
+  font-size: 2rem;
+  padding-bottom: 16px;
+}
