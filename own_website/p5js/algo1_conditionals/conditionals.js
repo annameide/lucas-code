@@ -50,24 +50,46 @@ function algorithm1(sketch) {
     }
 
     sketch.showOtherTime = function() {
-
       isNight = !isNight;
-  
     }
 
 
-  sketch.drawDay = function() {
-    sketch.background(0, 0, 150);
-    sketch.fill("#ffd966");
-    sketch.ellipse(sketch.width/2, 100, 100);
-    sketch.text('is day', sketch.width/2 - 30, 30); 
+  sketch.drawNight = function() {
+    sketch.background("#00003E");
+    sketch.fill("#F1F0F2");
+    sketch.noStroke();
+    sketch.ellipse(sketch.width/2, 280, 300);
+
+    sketch.fill("#F1F0F2");
+    sketch.noStroke();
+    sketch.ellipse(sketch.width/5, 80, 10);
+
+    sketch.fill("#F1F0F2");
+    sketch.noStroke();
+    sketch.ellipse(600, 380, 8);
+
+    sketch.fill("#F1F0F2");
+    sketch.noStroke();
+    sketch.ellipse(800, 100, 5);
+
+    sketch.textSize(32);
+    sketch.noStroke();
+    sketch.text('It is night!', sketch.width/2 - 60, 80);
   }
 
-  sketch.drawNight = function() {
-    sketch.background("#290C7D");
-    sketch.fill(255);
-    sketch.ellipse(sketch.width/2, 100, 100);
-    sketch.text('is night', sketch.width/2 - 30, 30);
+  sketch.drawDay = function() {
+    sketch.background("#A3C8FF");
+    sketch.fill("#ffd966");
+    sketch.noStroke();
+    sketch.ellipse(sketch.width/2, 280, 300);
+
+    sketch.textSize(32);
+    sketch.text('It is day!', sketch.width/2 - 50, 80);
+
+    sketch.stroke("#ffd966");
+    sketch.strokeWeight(2);
+    sketch.noFill(); 
+    sketch.ellipse(sketch.width/2, 280, 330); 
   }
 
   sketch.windowResized = function() {
